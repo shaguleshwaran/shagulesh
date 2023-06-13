@@ -1,0 +1,54 @@
+<html>
+
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="method"></p>
+    <p id="method1"></p>
+    <p id="method2"></p>
+    <p id="test"></p>
+    <p id="test1"></p>
+    <p id="test2"></p>
+    <p id="task"></p>
+    <p id="task1"></p>
+    <p id="task2"></p>
+    <script>
+        const course = ["csc", "mech", "ece,eee"];
+        let size = course.length;
+        document.getElementById("demo").innerHTML = size;
+        const name = ["tamilvanan", "shagulesh", "krishna"];
+        document.getElementById("demo1").innerHTML = name;
+        name.pop();
+        document.getElementById("demo2").innerHTML = name;
+        const car = ["bmw", "volvo", "ford"];
+        document.getElementById("method").innerHTML = car;
+        car.push("verna");
+        document.getElementById("method1").innerHTML = car;
+        const note = ["classmeat", "reliance", "jaya gold"];
+        note.unshift("shagulesh");
+        document.getElementById("method2").innerHTML = note;
+        const bike = ["r15", "yamaha rx100", "fz"]
+        bike.shift("ns200");
+        document.getElementById("test").innerHTML = bike;
+        const camera = ["canon", "sony", "video camera"];
+        let index = tool.indexof("nikon");
+        document.getElementById("test1").innerHTML = index;
+        const boat = ["blue moon", "Andiamo", "Atlantis"];
+        boad.splice(2, 0, "Black Pearl", "Titanic");
+        document.getElementById("test2").innerHTML = boat;
+        const company = ["tts", "highlife", "Tech Mahindra"];
+        let text = company.join("Tech Mahindra");
+        document.getElementById("task").innerHTML = text;
+        let add = 6;
+        const numbers = [30, 40, 50, 60];
+        numbers.forEach(light);
+        document.getElementById("task1").innerHTML = add;
+        function light(item) {
+            add += item;
+        }
+        document.getElementById("task2").innerHTML = math, max(90, 20, 100, 110);
+    </script>
+</body>
+
+</html>

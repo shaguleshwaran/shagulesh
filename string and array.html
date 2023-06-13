@@ -1,0 +1,128 @@
+<html>
+
+<body>
+    <h1 style="font-size: 50px;">JS String</h1>
+    <u>
+        <h2>JS Length</h2>
+    </u>
+    <h3>(polytechnic)</h3>
+    <h4>
+        <p id="demo" style="background-color: black; color: white;"></p>
+    </h4>
+    <u>
+        <h2>JS Slice</h2>
+    </u>
+    <h3>(polytechnic) slice(0,4)</h3>
+    <h4>
+        <p id="task" style="background-color: black; color: white;"></p>
+    </h4>
+    <u>
+        <h2>JS toUpperCase</h2>
+    </u>
+    <h3>(polytechnic)</h3>
+    <h4>
+        <p id="trial" style="background-color: black; color: white;"></p>
+    </h4>
+    <u>
+        <h2>JS toLowerCase</h2>
+    </u>
+    <h3>(POLYTECHNIC)</h3>
+    <h4>
+        <p id="submit" style="background-color: black; color: white;"></p>
+    </h4>
+    <u>
+        <h2>JS Concat</h2>
+    </u>
+    <h3>(polytechnic)+( college)</h3>
+    <h4>
+        <p id="demo0" style="background-color: black; color: white;"></p>
+    </h4>
+    <u>
+        <h2>JS Substring</h2>
+    </u>
+    <h3>POLYTECHNIC (0,5)</h3>
+    <h4><b id="demo3" style="background-color: black; color: white;"></b></h4>
+    <script>
+        let text = "polytechnic";
+        document.getElementById("demo").innerHTML = text.length;
+        let text1 = "polytechnic";
+        document.getElementById("task").innerHTML = text1.slice(0, 4);
+        let str = "polytechnic";
+        document.getElementById("trial").innerHTML = str.toUpperCase();
+        let tax = "POLYTECHNIC";
+        document.getElementById("submit").innerHTML = tax.toLowerCase();
+        let tex = "polytechnic" + " college";
+        document.getElementById("demo0").innerHTML = tex.concat();
+        let taxi = "POLYTECHNIC";
+        document.getElementById("demo3").innerHTML = taxi.substring(0, 5);
+    </script>
+
+    <style>
+        div {
+            margin-left: 500px;
+            justify-content: start;
+        }
+    </style>
+    <div>
+        <h1 style="font-size: 50px;">JS Array</h1>
+        <u>
+            <h2>JS Array Length</h2>
+        </u>
+        <h4>
+            <p id="demo1"></p>
+        </h4>
+        <u>
+            <h2>JS Array Slice</h2>
+        </u>
+        <h4>
+            <p id="task2"></p>
+        </h4>
+        <u>
+            <h2>JS Array pop</h2>
+        </u>
+        <h4>
+            <p id="trial3"></p>
+        </h4>
+        <h4>
+            <p id="trial4"></p>
+        </h4>
+        <u>
+            <h2>JS Array push</h2>
+        </u>
+        <h4>
+            <p id="submit4"></p>
+        </h4>
+        <h4>
+            <p id="submit5"></p>
+        </h4>
+        <u>
+            <h2>JS Array Concat</h2>
+        </u>
+        <h4>
+            <p id="demo5"></p>
+        </h4>
+
+        <script>
+            const tel = ["government", "polytechnic", "college"];
+            let size = tel.length;
+            document.getElementById("demo1").innerHTML = size;
+            const title = ["java", "javascript", "html"];
+            const slice = title.slice(2);
+            document.getElementById("task2").innerHTML = title + "<br><br>" + slice;
+            const name = ["palanivel", "ajay", "gopi", "velan"];
+            document.getElementById("trial3").innerHTML = name;
+            name.pop();
+            document.getElementById("trial4").innerHTML = name;
+            const fight = ["karate", "kung fu", "taichi", "one inch punch"];
+            document.getElementById("submit4").innerHTML = fight;
+            fight.push("boxing");
+            document.getElementById("submit5").innerHTML = fight;
+            const light = ["100v", "200v", "80v", "1000v"]
+            const color = ["white", "yellow", "red", "blue"]
+            const rate = light.concat(color);
+            document.getElementById("demo5").innerHTML = rate;
+        </script>
+    </div>
+</body>
+
+</html>

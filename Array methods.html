@@ -1,0 +1,66 @@
+<html>
+    <body>
+        <h1 style="font-size: 50px;">JS Array</h1>
+        <h2>1.JS Length</h2>
+        <b id="demo"></b>
+        <h2>2.JS Pop</h2>
+        <p id="task"></p>
+        <p id="task1"></p>
+        <h2>3.JS Push</h2>
+        <p id="trial"></p>
+        <p id="trial1"></p>
+        <h2>4.JS Unshift</h2>
+        <h3>unshift(pop,push)</h3>
+        <p id="sum"></p>
+        <h2>5.JS Shift</h2>
+        <p id="submit"></p>
+        <h2>6.JS Indexof</h2>
+        <h3>indexOf(gun)</h3>
+        <p id="wheel"></p>
+        <h2>7.JS Splice</h2>
+        <p id="games"></p>
+        <h2>8.JS Join</h2>
+        <p id="add"></p>
+        <h2>9.Sum</h2>
+        <p id="maths"></p>
+        <h2>10.highest number</h2>
+        <p id="integer"></p>
+
+                   <script>
+                            const tel=["government" , "polytechnic" , "college"];
+                            let size=tel.length;
+                            document.getElementById("demo").innerHTML=size;
+                            const name=["palanivel","ajay","gopi","velan"];
+                            document.getElementById("task").innerHTML = name;
+                            name.pop();
+                            document.getElementById("task1").innerHTML = name;
+                            const fight=["karate","kung fu","taichi","one inch punch"];
+                            document.getElementById("trial").innerHTML = fight;
+                            fight.push("boxing");
+                            document.getElementById("trial1").innerHTML = fight;
+                            const method=["lenght","unshift","shift","splice"];
+                            method.unshift("pop","push")
+                            document.getElementById("sum").innerHTML = method;
+                            const mouse=["keyboard","mouse","cpu","system"];
+                            mouse.shift();
+                            document.getElementById("submit").innerHTML = mouse;
+                            const tool=["knife","hammer","lighter","gun"];
+                            let index = tool.indexOf("gun");
+                            document.getElementById("wheel").innerHTML = index;
+                            const game = ["pubg bgmi", "cod", "pubg", "free fire"]; 
+                            game.splice(3, 0, "gta", "coc");
+                            document.getElementById("games").innerHTML = game;
+                            const demo=["bike","car","helicopter","ship"];
+                            let text=demo.join(" boat");
+                            document.getElementById("add").innerHTML = text;
+                            let plus = 6;
+                            const numbers = [40, 44, 60, 50];
+                            numbers.forEach(dark);
+                            document.getElementById("maths").innerHTML = plus;
+                            function dark(item) {
+                            plus += item;
+                         }
+                            document.getElementById("integer").innerHTML=Math.max(8,50,4,5,900);
+                   </script>
+    </body>
+</html>
